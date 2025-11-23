@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer - VED NGO</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">VED NGO</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="past-projects.html">Past Projects</a></li>
+                <li><a href="future-projects.html">Future Projects</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Floating Donate Button -->
+    <a href="donate.html" class="floating-donate-btn">Donate Now</a>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="section" style="padding-top: 100px;">
+            <h2 class="section-title">Volunteer Registration</h2>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Join us in making a difference! Your time and skills can transform lives. Fill out the form below to become a volunteer with VED NGO.
+            </p>
+
+            <div class="form-container">
+                <form id="volunteerForm" onsubmit="handleVolunteerSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="skills">Skills *</label>
+                        <textarea id="skills" name="skills" required placeholder="Please describe your skills, experience, or areas of interest (e.g., teaching, healthcare, IT, event management, etc.)"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Preferred Location *</label>
+                        <select id="location" name="location" required>
+                            <option value="">Select preferred location</option>
+                            <option value="delhi">Delhi</option>
+                            <option value="mumbai">Mumbai</option>
+                            <option value="bangalore">Bangalore</option>
+                            <option value="kolkata">Kolkata</option>
+                            <option value="chennai">Chennai</option>
+                            <option value="hyderabad">Hyderabad</option>
+                            <option value="pune">Pune</option>
+                            <option value="ahmedabad">Ahmedabad</option>
+                            <option value="remote">Remote/Online</option>
+                            <option value="any">Any Location</option>
+                            <option value="rural">Rural Areas</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="availability">Availability</label>
+                        <textarea id="availability" name="availability" placeholder="Please mention your availability (e.g., weekends, weekdays, specific hours, etc.)"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%;">Submit Registration</button>
+                </form>
+
+                <!-- Thank You Message -->
+                <div id="thankYouMessage" class="success-message">
+                    <h3 style="margin-bottom: 1rem;">Thank You for Registering!</h3>
+                    <p>We appreciate your interest in volunteering with VED NGO. Our team will review your application and contact you shortly.</p>
+                    <p style="margin-top: 1rem;">Together, we can create lasting change in communities across India!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Volunteer Section -->
+        <section class="section" style="background: var(--bg-light);">
+            <h2 class="section-title">Why Volunteer With Us?</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3>Make a Real Impact</h3>
+                    <p>Your contribution directly helps thousands of people in need. See the tangible difference you make in communities.</p>
+                </div>
+                <div class="card">
+                    <h3>Learn & Grow</h3>
+                    <p>Gain valuable experience, develop new skills, and work alongside passionate professionals in the social sector.</p>
+                </div>
+                <div class="card">
+                    <h3>Flexible Opportunities</h3>
+                    <p>We offer various volunteering opportunities that fit your schedule, skills, and interests - from on-ground work to remote support.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 VED NGO. All rights reserved.</p>
+            <p>Empowering Communities, Transforming Lives</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        function handleVolunteerSubmit(e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const formData = new FormData(form);
+
+            // Validate required fields
+            const name = formData.get('name');
+            const phone = formData.get('phone');
+            const email = formData.get('email');
+            const skills = formData.get('skills');
+            const location = formData.get('location');
+
+            if (!name || !phone || !email || !skills || !location) {
+                alert('Please fill in all required fields');
+                return;
+            }
+
+            // Create WhatsApp message
+            const message = `*Volunteer Registration - VED NGO*%0A%0A` +
+                `*Name:* ${name}%0A` +
+                `*Phone:* ${phone}%0A` +
+                `*Email:* ${email}%0A` +
+                `*Skills:* ${skills}%0A` +
+                `*Preferred Location:* ${location}%0A` +
+                `*Availability:* ${formData.get('availability') || 'Not specified'}`;
+
+            // WhatsApp URL
+            const whatsappUrl = `https://wa.me/917521074393?text=${message}`;
+
+            // Redirect to WhatsApp
+            window.open(whatsappUrl, '_blank');
+
+            // Show thank you message
+            document.getElementById('volunteerForm').style.display = 'none';
+            document.getElementById('thankYouMessage').classList.add('active');
+
+            // Scroll to message
+            document.getElementById('thankYouMessage').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    </script>
+</body>
+</html>
+

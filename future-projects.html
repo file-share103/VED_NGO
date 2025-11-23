@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Projects - VED NGO</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">VED NGO</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="past-projects.html">Past Projects</a></li>
+                <li><a href="future-projects.html">Future Projects</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Floating Donate Button -->
+    <a href="donate.html" class="floating-donate-btn">Donate Now</a>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="section" style="padding-top: 100px;">
+            <h2 class="section-title">Future Projects</h2>
+            <div class="grid grid-3">
+                <!-- Project 1 -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop" alt="Smart School Initiative">
+                    <h3>Smart School Initiative</h3>
+                    <p>Launching 100 smart classrooms equipped with digital learning tools and interactive content. This initiative aims to enhance learning outcomes for 20,000+ students in rural areas.</p>
+                    <button class="btn" onclick="openModal('modal1')">Read More</button>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=400&fit=crop" alt="Telemedicine Program">
+                    <h3>Telemedicine Program</h3>
+                    <p>Establishing telemedicine centers in 50 remote villages, connecting communities with specialist doctors through video consultations. This will bring quality healthcare to doorsteps.</p>
+                    <button class="btn" onclick="openModal('modal2')">Read More</button>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&h=400&fit=crop" alt="Women Entrepreneurship">
+                    <h3>Women Entrepreneurship Hub</h3>
+                    <p>Creating entrepreneurship hubs in 25 locations to support women in starting and scaling businesses. The program includes mentorship, funding support, and market access.</p>
+                    <button class="btn" onclick="openModal('modal3')">Read More</button>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&h=400&fit=crop" alt="Green Livelihood">
+                    <h3>Green Livelihood Program</h3>
+                    <p>Promoting sustainable livelihoods through organic farming, renewable energy, and eco-friendly products. This program will support 3,000+ families while protecting the environment.</p>
+                    <button class="btn" onclick="openModal('modal4')">Read More</button>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=600&h=400&fit=crop" alt="Disaster Preparedness">
+                    <h3>Community Disaster Preparedness</h3>
+                    <p>Training 500 communities in disaster preparedness and response. This includes early warning systems, evacuation plans, and emergency response teams to minimize disaster impact.</p>
+                    <button class="btn" onclick="openModal('modal5')">Read More</button>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1509099863731-ef4b3b1ad936?w=600&h=400&fit=crop" alt="Youth Leadership">
+                    <h3>Youth Leadership Program</h3>
+                    <p>Developing leadership skills in 5,000+ youth through training programs, mentorship, and community projects. Empowering the next generation to drive social change.</p>
+                    <button class="btn" onclick="openModal('modal6')">Read More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modals -->
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Smart School Initiative</h2>
+                <button class="modal-close" onclick="closeModal('modal1')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=500&fit=crop" alt="Smart School">
+                <p style="margin-bottom: 1rem; line-height: 1.8; color: var(--text-light);">
+                    The Smart School Initiative is our ambitious project to transform education in rural India through technology. We plan to establish 100 smart classrooms across 50 schools, reaching over 20,000 students. Each smart classroom will be equipped with interactive whiteboards, tablets, digital content, and high-speed internet.
+                </p>
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=500&fit=crop" alt="Digital Learning" style="margin: 1rem 0;">
+                <p style="margin-bottom: 1rem; line-height: 1.8; color: var(--text-light);">
+                    The program will provide students with access to quality educational content, virtual field trips, and interactive learning experiences. Teachers will receive comprehensive training in using digital tools and creating engaging digital lessons. We will also develop localized content in regional languages to ensure effective learning.
+                </p>
+                <p style="line-height: 1.8; color: var(--text-light);">
+                    Expected outcomes include improved learning outcomes, increased student engagement, and better preparation for the digital world. The project will be implemented over three years with phased rollout, starting with 25 schools in the first year. We are seeking partnerships with technology companies and educational institutions to make this vision a reality.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Telemedicine Program</h2>
+                <button class="modal-close" onclick="closeModal('modal2')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=500&fit=crop" alt="Telemedicine">
+                <p style="margin-bottom: 1rem; line-height: 1.8; color: var(--text-light);">
+                    Our Telemedicine Program aims to bridge the healthcare gap in remote areas by connecting communities with specialist doctors through technology. We plan to establish 50 telemedicine centers in remote villages, each equipped with video conferencing facilities, basic diagnostic equipment, and trained health workers.
+                </p>
+                <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=500&fit=crop" alt="Remote Consultation" style="margin: 1rem 0;">
+                <p style="margin-bottom: 1rem; line-height: 1.8; color: var(--text-light);">
+                    Patients will be able to consult with specialists in cardiology, dermatology, pediatrics, and other fields without traveling long distances. Local health workers will assist in examinations and follow-up care. The program will also include health monitoring for chronic conditions and preventive care consultations.
+                </p>
+                <p style="line-height: 1.8; color: var(--text-light);">
+                    This initiative will significantly reduce healthcare costs and travel time for patients while ensuring access to quality medical advice. We are partnering with hospitals and medical professionals to provide consultations at subsidized rates. The program is expected to benefit over 100,000 people annually once fully operational.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Women Entrepreneurship Hub</h2>
+                <button class="modal-close" onclick="closeModal('modal3')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&h=500&fit=crop" alt="Women Entrepreneurship">
+                <p style="margin-bottom: 1rem; line-height: 1.8; color: var(--text-light);">
+                    The Women Entrepreneurship Hub is designed to create a comprehensive ecosystem for women entrepreneurs. We plan to establish 25 hubs across different regions, each providing a physical space for business activities, training, networking, and support services.
+                </p>
+                <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=800&h=500&fit=crop" alt="Business Hub" style="margin: 1rem 0;">
+                <p style="margin-bottom: 1rem; line-height: 1.8; color: var(--text-light);">
+                    Each hub will offer business incubation services, mentorship from successful entrepreneurs, access to funding, market linkages, and training in business management, digital marketing, and financial planning. We will also facilitate networking events and create platforms for women to showcase their products and services.
+                </p>
+                <p style="line-height: 1.8; color: var(--text-light);">
+                    The program aims to support 1,000+ women entrepreneurs over five years, helping them start and scale their businesses. We are partnering with financial institutions, business mentors, and market platforms to ensure comprehensive support. The hubs will become centers of economic activity, creating employment opportunities and inspiring more women to pursue entrepreneurship.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Green Livelihood Program</h2>
+                <button class="modal-close" onclick="closeModal('modal4')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=500&fit=crop" alt="Green Livelihood">
+                <p style="margin-bottom: 1rem; line-height: 1.8; color: var(--text-light);">
+                    The Green Livelihood Program combines environmental conservation with economic empowerment. This innovative program will support 3,000+ families in adopting sustainable livelihood practices including organic farming, renewable energy, and eco-friendly product manufacturing.
+                </p>
+                <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&h=500&fit=crop" alt="Organic Farming" style="margin: 1rem 0;">
+                <p style="margin-bottom: 1rem; line-height: 1.8; color: var(--text-light);">
+                    Participants will receive training in organic farming techniques, renewable energy installation (solar panels, biogas), and production of eco-friendly products like organic compost, natural dyes, and biodegradable items. We will also help establish market linkages for these products, ensuring fair prices and sustainable demand.
+                </p>
+                <p style="line-height: 1.8; color: var(--text-light);">
+                    The program addresses climate change while creating income opportunities. It will reduce carbon footprint, improve soil health, and create a market for sustainable products. We are partnering with agricultural experts, renewable energy companies, and eco-conscious businesses to ensure the program's success and sustainability.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Community Disaster Preparedness</h2>
+                <button class="modal-close" onclick="closeModal('modal5')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&h=500&fit=crop" alt="Disaster Preparedness">
+                <p style="margin-bottom: 1rem; line-height: 1.8; color: var(--text-light);">
+                    The Community Disaster Preparedness Program aims to build resilient communities that can effectively respond to and recover from disasters. We plan to train 500 communities across disaster-prone regions in comprehensive disaster management.
+                </p>
+                <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=800&h=500&fit=crop" alt="Training" style="margin: 1rem 0;">
+                <p style="margin-bottom: 1rem; line-height: 1.8; color: var(--text-light);">
+                    The program includes establishing early warning systems, creating evacuation plans, training emergency response teams, setting up emergency shelters, and stockpiling essential supplies. Communities will also learn first aid, search and rescue techniques, and post-disaster recovery planning.
+                </p>
+                <p style="line-height: 1.8; color: var(--text-light);">
+                    Each community will have a trained disaster management committee and emergency response team. We will also establish communication networks and coordinate with government disaster management agencies. This proactive approach will significantly reduce loss of life and property during disasters, making communities more resilient and self-reliant.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Youth Leadership Program</h2>
+                <button class="modal-close" onclick="closeModal('modal6')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1509099863731-ef4b3b1ad936?w=800&h=500&fit=crop" alt="Youth Leadership">
+                <p style="margin-bottom: 1rem; line-height: 1.8; color: var(--text-light);">
+                    The Youth Leadership Program is designed to empower the next generation of change-makers. We aim to develop leadership skills in 5,000+ youth aged 18-30 through comprehensive training, mentorship, and hands-on community projects.
+                </p>
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=500&fit=crop" alt="Youth Training" style="margin: 1rem 0;">
+                <p style="margin-bottom: 1rem; line-height: 1.8; color: var(--text-light);">
+                    The program includes leadership workshops, communication skills training, project management, social entrepreneurship, and community engagement. Participants will work on real community projects, applying their learning to create tangible impact. They will also receive mentorship from experienced leaders and opportunities to network with peers and professionals.
+                </p>
+                <p style="line-height: 1.8; color: var(--text-light);">
+                    Graduates of the program will become community leaders, social entrepreneurs, and advocates for change. They will form a network of young leaders working together to address social challenges. The program will create a pipeline of future leaders who will continue driving social change in their communities and beyond.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 VED NGO. All rights reserved.</p>
+            <p>Empowering Communities, Transforming Lives</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

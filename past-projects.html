@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Projects - VED NGO</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">VED NGO</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="past-projects.html">Past Projects</a></li>
+                <li><a href="future-projects.html">Future Projects</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Floating Donate Button -->
+    <a href="donate.html" class="floating-donate-btn">Donate Now</a>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="section" style="padding-top: 100px;">
+            <h2 class="section-title">Past Projects</h2>
+            <div class="grid grid-3">
+                <!-- Project 1 -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop" alt="Rural Education Initiative">
+                    <h3>Rural Education Initiative</h3>
+                    <p>Established 50 learning centers across rural India, providing quality education to over 10,000 children. The project included teacher training, infrastructure development, and scholarship programs.</p>
+                    <button class="btn" onclick="openModal('modal1')">Read More</button>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=400&fit=crop" alt="Health Camp Program">
+                    <h3>Health Camp Program</h3>
+                    <p>Organized 200+ health camps in remote villages, providing free medical checkups, treatments, and health awareness sessions. Over 50,000 people benefited from this initiative.</p>
+                    <button class="btn" onclick="openModal('modal2')">Read More</button>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&h=400&fit=crop" alt="Women Skill Development">
+                    <h3>Women Skill Development</h3>
+                    <p>Empowered 5,000+ women through vocational training programs in tailoring, handicrafts, and computer skills. Many participants started their own businesses or found employment.</p>
+                    <button class="btn" onclick="openModal('modal3')">Read More</button>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&h=400&fit=crop" alt="Livelihood Support">
+                    <h3>Livelihood Support Program</h3>
+                    <p>Provided microfinance support and business training to 2,000+ families, helping them start sustainable income-generating activities and improve their economic conditions.</p>
+                    <button class="btn" onclick="openModal('modal4')">Read More</button>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=600&h=400&fit=crop" alt="Disaster Relief">
+                    <h3>Flood Relief & Rehabilitation</h3>
+                    <p>Provided immediate relief and long-term rehabilitation support to 10,000+ families affected by floods. Distributed essential supplies and helped rebuild homes and livelihoods.</p>
+                    <button class="btn" onclick="openModal('modal5')">Read More</button>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1509099863731-ef4b3b1ad936?w=600&h=400&fit=crop" alt="Digital Literacy">
+                    <h3>Digital Literacy Program</h3>
+                    <p>Trained 3,000+ youth and adults in basic computer skills and digital literacy, opening up new opportunities for education and employment in the digital age.</p>
+                    <button class="btn" onclick="openModal('modal6')">Read More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modals -->
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Rural Education Initiative</h2>
+                <button class="modal-close" onclick="closeModal('modal1')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=500&fit=crop" alt="Rural Education">
+                <p style="margin-bottom: 1rem; line-height: 1.8; color: var(--text-light);">
+                    The Rural Education Initiative was launched in 2018 with the aim of bringing quality education to underserved rural communities across India. Over the course of three years, we established 50 learning centers in remote villages, reaching over 10,000 children who previously had limited access to education.
+                </p>
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=500&fit=crop" alt="Students Learning" style="margin: 1rem 0;">
+                <p style="margin-bottom: 1rem; line-height: 1.8; color: var(--text-light);">
+                    The project included comprehensive teacher training programs, ensuring that educators were equipped with modern teaching methodologies. We also developed infrastructure including classrooms, libraries, and computer labs. Additionally, scholarship programs were introduced to support meritorious students from economically disadvantaged backgrounds.
+                </p>
+                <p style="line-height: 1.8; color: var(--text-light);">
+                    The impact has been remarkable - 85% of students showed significant improvement in academic performance, and many have gone on to pursue higher education. The project continues to operate with community support and has become a model for similar initiatives in other regions.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Health Camp Program</h2>
+                <button class="modal-close" onclick="closeModal('modal2')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=500&fit=crop" alt="Health Camp">
+                <p style="margin-bottom: 1rem; line-height: 1.8; color: var(--text-light);">
+                    Our Health Camp Program has been one of our most impactful initiatives, bringing essential healthcare services directly to remote villages where medical facilities are scarce. Since 2019, we have organized over 200 health camps across 15 states, reaching more than 50,000 people.
+                </p>
+                <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=500&fit=crop" alt="Medical Checkup" style="margin: 1rem 0;">
+                <p style="margin-bottom: 1rem; line-height: 1.8; color: var(--text-light);">
+                    Each camp provides comprehensive health checkups including blood pressure, blood sugar, eye examinations, and general consultations. We partner with local doctors and medical professionals to ensure quality care. Free medicines are distributed for common ailments, and critical cases are referred to nearby hospitals with financial support.
+                </p>
+                <p style="line-height: 1.8; color: var(--text-light);">
+                    The program also includes health awareness sessions on topics like hygiene, nutrition, maternal health, and disease prevention. This holistic approach has significantly improved health outcomes in the communities we serve, with many preventable diseases being detected and treated early.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Women Skill Development</h2>
+                <button class="modal-close" onclick="closeModal('modal3')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&h=500&fit=crop" alt="Women Training">
+                <p style="margin-bottom: 1rem; line-height: 1.8; color: var(--text-light);">
+                    The Women Skill Development Program was designed to empower women economically and socially by providing them with marketable skills and opportunities. Launched in 2020, the program has successfully trained over 5,000 women across various sectors.
+                </p>
+                <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=800&h=500&fit=crop" alt="Skill Training" style="margin: 1rem 0;">
+                <p style="margin-bottom: 1rem; line-height: 1.8; color: var(--text-light);">
+                    Training programs were offered in tailoring, handicrafts, computer skills, beauty services, and food processing. Each program included both technical skills and business management training. Participants received certificates upon completion and were connected with employment opportunities or provided support to start their own businesses.
+                </p>
+                <p style="line-height: 1.8; color: var(--text-light);">
+                    The program has transformed lives - 70% of participants are now earning income, either through employment or entrepreneurship. Many have become role models in their communities, inspiring other women to pursue skill development and economic independence.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Livelihood Support Program</h2>
+                <button class="modal-close" onclick="closeModal('modal4')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=500&fit=crop" alt="Livelihood">
+                <p style="margin-bottom: 1rem; line-height: 1.8; color: var(--text-light);">
+                    Our Livelihood Support Program focuses on creating sustainable income opportunities for families living below the poverty line. Through microfinance, business training, and market linkages, we have supported over 2,000 families in starting and scaling their income-generating activities.
+                </p>
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=500&fit=crop" alt="Business Support" style="margin: 1rem 0;">
+                <p style="margin-bottom: 1rem; line-height: 1.8; color: var(--text-light);">
+                    The program provides small loans at low interest rates, along with comprehensive business training covering financial management, marketing, and customer relations. We also help participants access markets and establish supply chains for their products or services.
+                </p>
+                <p style="line-height: 1.8; color: var(--text-light);">
+                    Results show that 80% of supported families have increased their monthly income by at least 40%, with many achieving financial stability. The program has created a ripple effect, with successful entrepreneurs now employing others in their communities.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Flood Relief & Rehabilitation</h2>
+                <button class="modal-close" onclick="closeModal('modal5')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&h=500&fit=crop" alt="Disaster Relief">
+                <p style="margin-bottom: 1rem; line-height: 1.8; color: var(--text-light);">
+                    When devastating floods hit several states in 2021, VED NGO immediately mobilized resources to provide emergency relief. Our rapid response team reached affected areas within 48 hours, providing immediate assistance to over 10,000 families.
+                </p>
+                <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=800&h=500&fit=crop" alt="Relief Distribution" style="margin: 1rem 0;">
+                <p style="margin-bottom: 1rem; line-height: 1.8; color: var(--text-light);">
+                    Immediate relief included food packets, clean water, clothing, medicines, and temporary shelter. As the situation stabilized, we shifted focus to long-term rehabilitation, helping families rebuild their homes, restore their livelihoods, and access government support schemes.
+                </p>
+                <p style="line-height: 1.8; color: var(--text-light);">
+                    The rehabilitation phase included financial support for rebuilding, replacement of lost assets, and livelihood restoration programs. We also worked on disaster preparedness, training communities to better respond to future emergencies. Today, most affected families have recovered and are back on their feet.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Digital Literacy Program</h2>
+                <button class="modal-close" onclick="closeModal('modal6')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1509099863731-ef4b3b1ad936?w=800&h=500&fit=crop" alt="Digital Literacy">
+                <p style="margin-bottom: 1rem; line-height: 1.8; color: var(--text-light);">
+                    Recognizing the growing importance of digital skills in today's world, we launched the Digital Literacy Program in 2022. The program aims to bridge the digital divide by providing computer and internet literacy training to youth and adults in underserved communities.
+                </p>
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=500&fit=crop" alt="Computer Training" style="margin: 1rem 0;">
+                <p style="margin-bottom: 1rem; line-height: 1.8; color: var(--text-light);">
+                    Over 3,000 participants have been trained in basic computer operations, internet usage, email, online banking, and digital government services. The program also covers online safety and digital citizenship. Training is conducted in local languages to ensure better understanding.
+                </p>
+                <p style="line-height: 1.8; color: var(--text-light);">
+                    The program has opened new opportunities for participants - many have found online employment, started e-commerce businesses, or are now able to access government services digitally. The success has led to expansion of the program to more locations.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 VED NGO. All rights reserved.</p>
+            <p>Empowering Communities, Transforming Lives</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

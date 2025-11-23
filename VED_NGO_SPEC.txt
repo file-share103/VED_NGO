@@ -1,0 +1,96 @@
+TECHNICAL SPECIFICATION FOR VED NGO WEBSITE
+
+Tech Stack:
+- HTML, CSS, JavaScript
+- Common navigation bar on all pages
+- use the exesting folder structure
+- Fully responsive design for mobile, tablet, desktop
+
+Pages to Create:
+- index.html (Home)
+- about.html (About)
+- past-projects.html (Past Projects)
+- future-projects.html (Future Projects)
+- donate.html (Donate)
+- volunteer.html (Volunteer Registration)
+- contact.html (Contact Us)
+
+GLOBAL UI REQUIREMENTS:
+- Sticky navigation bar
+- Floating donate button (red)
+- Responsive layout with media queries
+- Loading animation/page loader
+- Smooth animations and transitions
+- Clean typography and consistent color theme
+- Reusable components: nav, footer, modals, cards
+
+HOME PAGE (index.html):
+A. Image Slider:
+- Full-width slider with 30% transparent overlay (left/right)
+- Overlay contains heading, paragraph, and button → Past Projects page
+- Auto-slide + manual controls
+
+B. Summary Section:
+- Title: Summary / About VED NGO
+- Grid layout with image + title + description blocks
+
+C. Our Programmes:
+- Programmes grid:
+  - Education
+  - Women Empowerment
+  - Health Care
+  - Healthcare
+  - Livelihood
+  - Disaster Response
+
+D. Our Impact:
+- Stats grid:
+  - 20+ Lakh — Children/families impacted yearly
+  - 2000+ Villages — Across India
+  - 400+ Projects — Education, healthcare, empowerment
+  - 27+ States — Including remote regions
+
+E. Testimonials:
+- Beneficiaries, volunteers, donors
+- Slider or card layout
+
+ABOUT PAGE (about.html):
+- Full-width NGO overview section
+- Team section with 6 team cards:
+  - Image, name, designation, description, email
+
+PAST PROJECTS (past-projects.html):
+- Each project has image + short text + Read More modal
+- Modal contains full content + more images
+
+FUTURE PROJECTS (future-projects.html):
+- Same structure as Past Projects with modals
+
+DONATE PAGE (donate.html):
+- Left: Image
+- Right: Donation form
+
+Form Flow:
+1. Enter amount
+2. Show fields:
+   - Name
+   - Phone
+   - Email
+   - Donate Anonymously (skip name/phone)
+3. Display account details with Copy buttons
+4. Donor receipt confirmation message shown (manual sending later)
+5. Recurring donation options: ₹100/mo, ₹500/mo, ₹1000/mo or once payment option
+
+VOLUNTEER PAGE (volunteer.html):
+- Form fields:
+  - Name
+  - Phone
+  - Email
+  - Skills
+  - Preferred Location
+- Shows thank-you message after submit
+
+CONTACT PAGE (contact.html):
+- Address, phone, email
+- Contact form (name, email, subject, message)
+
